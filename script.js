@@ -20,7 +20,7 @@
         var needspe = confirm("Do you want special characters?");
         if(startup === true){
 
-            return howlong, neednum, needspe;
+            return startup, howlong, neednum, needspe;
         };
 
     });
