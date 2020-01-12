@@ -7,19 +7,27 @@
     var combo = [alphabet, lowAlph, numb, special]
        
    // User input
-    var promptMe = document.getElementById("action");
+    var promptMe= document.getElementById("action");
     promptMe.addEventListener("click", function() {
+    
+        var startup = confirm("Do you want a password?");
+        if(startup === false) {
+            return console.log("test");
+        };
 
-        console.log("test");
         var howlong = prompt("how long should the password be?");
         var neednum = confirm("Do you want numbers?");
         var needspe = confirm("Do you want special characters?");
+        if(startup === true){
 
-    }); 
+            return howlong, neednum, needspe;
+        };
+
+    });
     // funtion that generates password
-    if(){
+    if(startup === true){
     var setup;
-    for (setup = 0; setup< howlong*1; setup++) {
-        var ran= Math.floor(Math.random()*10);
-        console.log(setup);
+    for (setup = 0; setup< combo.length; setup++) {
+        var ran= Math.floor(Math.random()*4);
+        console.log(ran);
     }};
