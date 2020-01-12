@@ -12,7 +12,7 @@
     
         var startup = confirm("Do you want a password?");
         if(startup === false) {
-            return console.log("test");
+            return false;
         };
 
         var howlong = prompt("how long should the password be?");
@@ -20,14 +20,27 @@
         var needspe = confirm("Do you want special characters?");
         if(startup === true){
 
-            return startup, howlong, neednum, needspe;
+            if(howlong > " " && neednum === true && needspe === true){
+                console.log(howlong, neednum, needspe);
+                return howlong, neednum, needspe;
+            }else if(howlong > " " && neednum === true && needspe === false ){
+                console.log(howlong, neednum);
+                return howlong, neednum;
+            }else if(howlong > " " && needspe === true && neednum === false){
+                console.log(howlong, needspe)
+                return howlong, neednum;
+            }else{
+                console.log(howlong)
+                return howlong;
+            };
+        
         };
 
     });
     // funtion that generates password
-    if(startup === true){
     var setup;
     for (setup = 0; setup< combo.length; setup++) {
         var ran= Math.floor(Math.random()*4);
         console.log(ran);
-    }};
+
+    };
