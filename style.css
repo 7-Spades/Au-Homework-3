@@ -12,9 +12,19 @@ html body{
 .foot{
     flex-shrink: 0;
     background-color: black;
-    padding: 27px;
-}
+    padding: 47px;}
+
 #panel{
     flex: 1 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 110px;
+}
+@media screen and (max-width: 1024px){
+.foot{
+    flex-shrink: 0;
+    background-color: black;
+    padding: 40px;}
+#panel{
+        flex: 1 0 auto;
+        margin-bottom: 250px;
+    }
 }

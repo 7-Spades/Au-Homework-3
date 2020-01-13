@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,21 +13,21 @@
     <header class="head">
     <div class="container-12">
         <div class="row justify-content-center">
-            <div class="justify-content-center">
+            <div class="col-lg-4 col-md col-sm">
                 <h2 >Password Generator</h2>
             </div>
         </div>
     </header>
-<div class="container" id="panel">
+<div class="container-lg container-md-fluid conatiner-fluid-sm" id="panel">
         <div class="row">
-            <div class="col pb-2">
+            <div class="col-lg col-md-6 col-sm-6 pb-2">
                 <h3>Generate Password</h3>
             </div>
         </div>
 
 
         <div class="row">
-            <div class="col">
+            <div class="col-lg col-md col-sm">
                 <div class="jumbotron">
                     <p class="lead"></p>
                   </div>
@@ -36,9 +36,9 @@
 
 
         <div class="row">
-            <div class="col">
-                <button type="button" id="action" class="btn btn-primary btn-lg">Generate Password</button>
-<button type="button" class="btn btn-secondary btn-lg">Copy</button>
+            <div class="col-lg col-md col-sm">
+                <button type="button" id="action" class="btn btn-primary btn-lg mr-2">Generate Password</button>
+                <button type="button" class="btn btn-secondary btn-lg">Copy</button>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@
         </div>
     </div>
 </div>
-<footer class="foot"></footer>
+<footer class="foot container-fluid-md container-fluid-sm"></footer>
 <script text="text/javascript" src="script.js"></script>
 </body>
 
