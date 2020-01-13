@@ -61,7 +61,7 @@ function work(howlong, neednum, needspe, startup){
             var guess01= Math.floor(Math.random()*25); 
             console.log(guess01, alphabet[guess01]);
             var pen1 = document.getElementsByClassName("lead");
-            pen1[0].textContent= alphabet.indexOf(guess01);
+            pen1[0].textContent= alphabet[guess01];
             document.body.appendChild(pen1[0]);
         };
 
@@ -69,7 +69,7 @@ function work(howlong, neednum, needspe, startup){
             var guess02= Math.floor(Math.random()*10); 
             console.log(guess02, numb[guess02]);
             var pen2 = document.getElementsByClassName("lead");
-            pen2[0].textContent= numb.indexOf(guess02);
+            pen2[0].textContent= numb[guess02];
             document.body.appendChild(pen2[0]);
         };
 
@@ -77,7 +77,7 @@ function work(howlong, neednum, needspe, startup){
             var guess03= Math.floor(Math.random()*13); 
             console.log(guess03, special[guess03]);
             var pen3 = document.getElementsByClassName("lead");
-            pen3[0].textContent= numb.indexOf(guess01);
+            pen3[0].textContent= numb[guess03];
             document.body.appendChild(pen3[0]);
         };
 
@@ -85,7 +85,7 @@ function work(howlong, neednum, needspe, startup){
             var guess04= Math.floor(Math.random()*25); 
             console.log(guess04, lowAlph[guess04]);
             var pen4 = document.getElementsByClassName("lead");
-            pen4[0].textContent= lowAlph.indexOf(guess04);
+            pen4[0].textContent= lowAlph[guess04];
             document.body.appendChild(pen4[0]);
         };
     }};
