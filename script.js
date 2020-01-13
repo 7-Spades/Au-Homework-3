@@ -52,7 +52,7 @@ function work(howlong, neednum, needspe, startup){
     // funtion that generates password
     if(startup === true){
     var setup;
-    for (setup = 0; setup< combo.length; setup++) {
+    for (setup = 0; setup< howlong.indexOf(0, 1); setup++) {
         var ran= Math.floor(Math.random()*4);
         console.log(ran);
 
